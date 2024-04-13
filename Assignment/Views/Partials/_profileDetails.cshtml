@@ -1,0 +1,22 @@
+﻿<section class="profile-account">
+    <div class="container">
+
+        <form method="post" asp-controller="Auth" asp-action="Adress-Details">
+
+            <div class="form-content">
+
+                <div class="profile-box">
+                    <img src="~/images/account-img/avatar.svg" />
+                    <h1>John Doe</h1>
+                    <h6>john.doe@domain.com</h6>
+               </div>       
+                <a asp-action="Sign Out" asp-controller="Default"><i class="fa-regular fa-arrow-left-to-bracket"></i>>Sign Out</a>
+
+                <button class="btn btn-theme" type="submit">Account Details</button>
+            </div>
+        </form>
+
+
+    </div>
+</section>
+

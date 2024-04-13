@@ -1,0 +1,23 @@
+﻿.slider-section {
+   /* display: flex;*/
+    justify-content: flex-start;
+    margin-top:25px;
+    margin-bottom:25px;
+    padding-right:600px;
+
+
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+
+        .slider_content {
+            text-align: left;
+
+            .slider-image {
+                max-width: 200%;
+                height: auto;
+                gap: 15px 0;
+            }
+        }
+    }
+}

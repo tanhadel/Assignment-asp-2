@@ -1,0 +1,68 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="wwwroot\images\account-img\avatar.svg" />
+    <None Include="wwwroot\images\apps\app-image.svg" />
+    <None Include="wwwroot\images\apps\appstore.svg" />
+    <None Include="wwwroot\images\apps\googleplay.svg" />
+    <None Include="wwwroot\images\apps\rating %281%29.svg" />
+    <None Include="wwwroot\images\apps\rating.svg" />
+    <None Include="wwwroot\images\brands\logo %281%29.svg" />
+    <None Include="wwwroot\images\brands\logo %282%29.svg" />
+    <None Include="wwwroot\images\brands\logo %283%29.svg" />
+    <None Include="wwwroot\images\brands\logo.svg" />
+    <None Include="wwwroot\images\content\bx-check-circle.svg" />
+    <None Include="wwwroot\images\content\content-image.svg" />
+    <None Include="wwwroot\images\cours-img\group-img.svg" />
+    <None Include="wwwroot\images\image-tools-features\add-group.svg" />
+    <None Include="wwwroot\images\image-tools-features\bell.svg" />
+    <None Include="wwwroot\images\image-tools-features\chat.svg" />
+    <None Include="wwwroot\images\image-tools-features\presentation.svg" />
+    <None Include="wwwroot\images\image-tools-features\shield.svg" />
+    <None Include="wwwroot\images\image-tools-features\tests.svg" />
+    <None Include="wwwroot\images\logotype.svg" />
+    <None Include="wwwroot\images\Second-content\color-icon.svg" />
+    <None Include="wwwroot\images\Second-content\email-io.svg" />
+    <None Include="wwwroot\images\Second-content\MailChimp.svg" />
+    <None Include="wwwroot\images\Second-content\tools-el.svg" />
+    <None Include="wwwroot\images\Second-content\tools-fe.svg" />
+    <None Include="wwwroot\images\Second-content\tools-googel.svg" />
+    <None Include="wwwroot\images\Second-content\tools-icon.svg" />
+    <None Include="wwwroot\images\Second-content\Zoom.svg" />
+    <None Include="wwwroot\images\subscribe-img\Group.svg" />
+    <None Include="wwwroot\images\taskmaster\image.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.3" />
+    <PackageReference Include="Microsoft.Azure.DocumentDB.Core" Version="2.22.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastracure\Infrastracure.csproj" />
+    <ProjectReference Include="..\SubApi_1\SubApi_1.csproj" />
+  </ItemGroup>
+
+</Project>

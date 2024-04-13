@@ -1,0 +1,77 @@
+﻿
+@{
+    var theme = Context.Request.Cookies["theme"] ?? "light";
+    var isDarkMode = (theme == "dark") ? true : false;
+    var user = await UserManager.GetUserAsync(User);
+
+
+}
+
+
+<header>
+    <div class="container">
+        <a asp-action="Home" asp-controller="Default" class="logo"><img src="~/images/logotype.svg" alt="logo"></a>
+        <nav class="nav-menu">
+            <a asp-action="Home" asp-controller="Default" class="nav-link">Overview</a>
+            @if (SignInManager.IsSignedIn(User)&& User != null)
+            {
+                <a asp-action="Index" asp-controller="Courses" class="nav-link">Courses</a>
+            }
+            else
+            {
+                <a asp-action="Home" asp-controller="Default" class="nav-link">Features</a>
+            }
+            <a asp-action="Contact" asp-controller="Default" class="nav-link">Contact</a>
+
+        </nav>
+        <div class="account-buttons">
+            @if (SignInManager.IsSignedIn(User!)&& user != null)
+            {
+
+               <div class="profile">
+
+                   <div class="image">
+                       <a asp-action="Details" asp-controller="Account">
+                            <img src="@Configuration["FilePath:ProfileImagePath"]/@user." alt="" />
+
+                       </a>
+                   </div>
+               </div>
+            }
+            else
+            {
+                
+            }
+        </div>
+
+
+        <div id="theme-switch" class="theme-switch">
+                <label>Light</label>
+                <label class="switch" for="switch-mode">
+                    <input type="checkbox" id="switch-mode" checked="@isDarkMode">
+                    <span class="slider round"></span>
+                </label>
+                <label >Dark</label>
+        </div>
+        <div class="account-buttons">
+  
+            @if(SignInManager.IsSignedIn(User!) && user != null)
+            {
+                <div class="profile">
+                    <div class="image">
+                        <a asp-action="Details" asp-controller="Account">
+                            <img src="@Configuration["FilePaths:ProfileImagePath"]/@user.ProfileImage" alt="Profile" />
+                        </a>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <a asp-action="SignIn" asp-controller="Auth" class="btn btn-secondary"><i class="fa-regular fa-arrow-right-to-bracket"></i> Sign in</a>
+                <a asp-action="SignUp" asp-controller="Auth" class="btn btn-theme"><i class="fa-regular fa-user"></i> Sign up</a>
+            }
+
+        </div>
+        <button class="btn btn-menu"><i class="fa-regular fa-bars"></i></button>
+    </div>
+</header>

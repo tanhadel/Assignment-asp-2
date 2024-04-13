@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+:root {
+    --color-gray-000: #FFFFFF;
+    --color-gray-100: #F3F6FF;
+    --color-gray-200: #EFF2FC;
+    --color-gray-300: #E2E5F1;
+    --color-gray-400: #D4D7E5;
+    --color-gray-500: #B4B7C9;
+    --color-gray-600: #9397AD;
+    --color-gray-700: #565973;
+    --color-gray-800: #33354D;
+    --color-gray-900: #0B0F19;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-gray: #EFF2FC;
+    --color-theme: #6366F1;
+    --color-danger: #F5D7DA;
+    --color-danger-dark: #e57e88;
+    --color-success: #bcf7d2;
+    --color-success-dark: #22C55E;
+    --color-warning: #ffe8ad;
+    --color-info: #cfdefd;
+    --font-standard: "Manrope", sans-serif;
+}
+
+:root.dark {
+    --color-gray-000: #0B0F19;
+    --color-gray-100: #33354D;
+    --color-gray-200: #565973;
+    --color-gray-300: #9397AD;
+    --color-gray-400: #B4B7C9;
+    --color-gray-500: #D4D7E5;
+    --color-gray-600: #E2E5F1;
+    --color-gray-700: #EFF2FC;
+    --color-gray-800: #F3F6FF;
+    --color-gray-900: #FFFFFF;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-theme: #6366F1;
+    --color-danger: #F5D7DA;
+    --color-danger-dark: #e57e88;
+    --color-success: #bcf7d2;
+    --color-success-dark: #22C55E;
+    --color-warning: #ffe8ad;
+    --color-info: #cfdefd;
+    --font-standard: "Manrope", sans-serif;
+}
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "manrope", sans-serif;
+    line-height: 1.5;
+    color: var(--color-gray-800);
+
+
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.wrapper{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    
+
+}
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+
+
+    @include md {
+        max-width: 720px;
+
+    }
+    @include lg{
+        max-width: 960px;
+
+    }
+    @include xl  {
+        max-width: 1140px;
+
+    }
+    @include xxl {
+        max-width: 1320px;
+
+    }
+    
+    
+}
+h1{
+    font-size: 32px;
+    @include lg{
+        font-size: 40px;
+
+    }
+    @include xl {
+        font-size: 52px;
+    }
+}
+
+a {
+    font-size: var(--colo-theme) ;
+
+
+    &:hover {
+        text-decoration: none;
+    }
+}

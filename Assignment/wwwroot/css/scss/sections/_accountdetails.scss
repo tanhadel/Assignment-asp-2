@@ -1,0 +1,75 @@
+﻿
+.account-details {
+
+
+
+    .container {
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            color: var(--color-theme);
+        }
+
+        width: 95%;
+
+        @include xl {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+
+            @include xl {
+                width: 50%;
+            }
+
+            h1 {
+                margin-bottom: 0;
+            }
+
+            .form-content {
+                margin-top: 15px;
+                display: grid;
+                gap: 20px;
+                grid-template-columns: 1fr;
+                grid-template-areas: "firstname " "lastname" "email" "phone" "bio" "buttons";
+
+
+                @include md {
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas: "firstname lastname" "email phone" "bio bio" "buttons buttons";
+                }
+
+
+                .input-firstname {
+                    grid-area: firstname;
+                }
+
+                .input-lastname {
+                    grid-area: lastname;
+                }
+
+                .input-email {
+                    grid-area: email;
+                }
+
+                .input-phone {
+                    grid-area: phone;
+                }
+
+                .input-bio {
+                    grid-area: bio;
+                }
+
+                .input-buttons {
+                    grid-area: buttons;
+                    display: flex;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}

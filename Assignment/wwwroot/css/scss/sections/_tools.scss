@@ -1,0 +1,138 @@
+﻿.tools {
+  
+    background-color: var(--color-gray-white);
+    padding: 50px 0;
+
+    .container {
+        text-align: center;
+
+        .tools-features {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: 1fr;
+
+            @include md {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @include xl {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+
+            .tools-box {
+
+                &:nth-child(1) {
+                    border-bottom: 1px solid var(--color-gray-white);
+                }
+
+                &:nth-child(2) {
+                    border-bottom: 1px solid var(--color-gray-white);
+                }
+
+                &:nth-child(3) {
+                    border-bottom: 1px solid var(--color-gray-white);
+                }
+
+                &:nth-child(4) {
+                    border-bottom: 1px solid var(--color-gray-white);
+                }
+
+                &:nth-child(5) {
+                    border-bottom: 1px solid var(--color-gray-white);
+                }
+
+                &:nth-child(6) {
+                    border-bottom: 1px solid var(--color-gray-white);
+                }
+
+                &:nth-child(7) {
+                    border-bottom: 1px solid var(--color-gray-white);
+                }
+
+                &:nth-child(8) {
+                    border-bottom: none;
+                }
+
+                @include md {
+                    &:nth-child(1) {
+                        border-bottom: 1px solid var(--color-gray-white);
+                        border-right: 1px solid var(--color-gray-white);
+                    }
+
+                    &:nth-child(2) {
+                        border-bottom: 1px solid var(--color-gray-white);
+                    }
+
+                    &:nth-child(3) {
+                        border-bottom: 1px solid var(--color-gray-white);
+                        border-right: 1px solid var(--color-gray-white);
+                    }
+
+                    &:nth-child(4) {
+                        border-bottom: 1px solid var(--color-gray-white);
+                    }
+
+                    &:nth-child(5) {
+                        border-bottom: 1px solid var(--color-gray-white);
+                        border-right: 1px solid var(--color-gray-white);
+                    }
+
+                    &:nth-child(6) {
+                        border-bottom: 1px solid var(--color-gray-white);
+                        border-right: 1px solid var(--color-gray-white);
+                    }
+
+                    &:nth-child(7) {
+                        border-bottom: 1px solid var(--color-gray-white);
+                        border-right: 1px solid var(--color-gray-white);
+                    }
+
+                    &:nth-child(8) {
+                        border-bottom: none;
+                    }
+                }
+
+
+                @include xl {
+                    &:nth-child(1) {
+                        border-bottom: 1px solid var(--color-gray-white);
+                    }
+
+                    &:nth-child(2) {
+                        border-bottom: 1px solid var(--color-gray-white);
+                        border-left: 1px solid var(--color-gray-white);
+                        border-right: 1px solid var(--color-gray-white);
+                    }
+
+                    &:nth-child(3) {
+                        border-bottom: 1px solid var(--color-gray-white);
+                    }
+
+                    &:nth-child(4) {
+                        border-bottom: none;
+                    }
+
+                    &:nth-child(5) {
+                        border-bottom: none;
+                    }
+
+                    &:nth-child(6) {
+                        border-bottom: none;
+                        border-left: 1px solid var(--color-gray-white);
+                        border-right: 1px solid var(--color-gray-white);
+                    }
+
+                    &:nth-child(7) {
+                        border-bottom: none;
+                        border-left: 1px solid var(--color-gray-white);
+                        border-right: 1px solid var(--color-gray-white);
+                    }
+
+                    &:nth-child(8) {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+﻿.content-home {
+
+    .container {
+        display: flex;
+        align-items: center;
+
+        .content {
+            flex: 1;
+            margin-right: 50px;
+            font-size: 0.5rem;
+
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+
+
+                li {
+                    padding-left: 20px;
+                    background: url('/images/content/bx-check-circle.svg') left center no-repeat;
+                    background-size: 16px 16px;
+                    margin-bottom: 10px;
+                }
+            }
+
+
+            .header-content {
+                margin-bottom: 10px;
+            }
+
+            .content-learn {
+                margin-top: 20px;
+            }
+        }
+
+        .content-image {
+            padding-right: 75px;
+        }
+    }
+}

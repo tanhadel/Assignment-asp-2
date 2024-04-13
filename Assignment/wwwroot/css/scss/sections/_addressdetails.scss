@@ -1,0 +1,61 @@
+﻿.address-account {
+    margin-bottom: 50px;
+
+    .container {
+        width: 95%;
+
+        @include xl {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+
+            @include xl {
+                width: 50%;
+            }
+
+            h1 {
+                margin-bottom: 0;
+            }
+
+            .form-content {
+                margin-top: 30px;
+                display: grid;
+                gap: 20px;
+                grid-template-columns: 1fr;
+                grid-template-areas: "address_1" "address_2" "postal_code" "city" "buttons";
+
+
+                @include md {
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas: "address_1 address_1" "address_2 address_2" "postal_code city" "buttons buttons";
+                }
+
+
+                .input-first_address {
+                    grid-area: address_1;
+                }
+
+                .input-second_address {
+                    grid-area: address_2;
+                }
+
+                .input-postal_code {
+                    grid-area: postal_code;
+                }
+
+                .input-city {
+                    grid-area: city;
+                }
+
+                .input-buttons {
+                    grid-area: buttons;
+                    display: flex;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
